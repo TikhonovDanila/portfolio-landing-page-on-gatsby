@@ -1,0 +1,119 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url("../fonts/InterLight.woff2") format('woff2');
+    font-display: swap;
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url("../fonts/InterRegular.woff2") format('woff2');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url("../fonts/InterMedium.woff2") format('woff2');
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url("../fonts/InterSemiBold.woff2") format('woff2');
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url("../fonts/InterBold.woff2") format('woff2');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+body{
+    font-family: 'Inter',sans-serif;
+}
+:root {
+    --color-light: #fff;
+    --color-grey: #838383;
+    --color-dark: #1D1D1F;
+    --offset: 190px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 60px;
+}
+.container{
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+.btn-reset{
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn{
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+    padding: 20px 0;
+    min-width: 180px;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.btn--light {
+    color: var(--color-dark);
+    background-color: var(--color-light);
+}
+.btn--light:hover{
+    color: var(--color-light);
+    background-color: var(--color-dark);
+}
+.btn--dark{
+    color: var(--color-light);
+    background-color: var(--color-dark);
+}
+.btn--dark:hover{
+    color: var(--color-dark);
+    background-color: var(--color-light);
+
+}
+.list-reset{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
