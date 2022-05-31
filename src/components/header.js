@@ -28,11 +28,11 @@ export default ({children}) => (
                         </button>
                         <nav className="header__nav nav">
                             <ul className="nav__list list-reset">
-                                <ListLink to="/portfolio/">Portfolio</ListLink>
-                                <ListLink to="/team/">Team</ListLink>
-                                <ListLink to="/about/">About</ListLink>
-                                <ListLink to="/blog/">Blog</ListLink>
-                                <ListLink to="/contact/">Contact</ListLink>
+                                <ListLink to="/">Portfolio</ListLink>
+                                <ListLink to="/">Team</ListLink>
+                                <ListLink to="/">About</ListLink>
+                                <ListLink to="/">Blog</ListLink>
+                                <ListLink to="/">Contact</ListLink>
                             </ul>
                         </nav>
                     </div>
